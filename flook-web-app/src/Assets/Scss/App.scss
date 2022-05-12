@@ -1,0 +1,34 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; box-sizing: inherit;}
+body {
+  color: #243238;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-reverse);
+}
+a,
+a:hover,
+a:focus,
+a:active,
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: 0 dotted rgba(0, 0, 0, 0) !important;
+}
+
+
+@import 'animate.css';
+@import "./Animation.scss";
+@import "./App/HeaderStyle/index.scss";
+@import "./BodyStyle/index.scss";
+@import "./App/Footer.scss";
+

@@ -1,0 +1,110 @@
+.home-header {
+  position: relative;
+  background: linear-gradient(var(--primary-hover), var(--primary-dark));
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://phenixthemes.com/frontdemo/animtora/img/pattren-top.png) 0 0 repeat-x;
+    animation: backgroundX 300s linear both infinite;
+    -webkit-animation: backgroundX 300s linear both infinite;
+    mix-blend-mode: soft-light;
+    transition: all 0.3s linear;
+    z-index: 0;
+  }
+  &::after{
+    content: '';
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    position: absolute;
+  }
+  [data-sticky="absolute"].is-sticky.tornado-header {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  [data-sticky="absolute"].is-sticky {
+    position: fixed;
+    top: 0;
+  }
+  .tornado-header {
+    background: var(--primary-dark);
+    position: relative;
+    border: none;
+    &.is-sticky .navigation-menu {
+      display: none;
+    }
+    &:not(.is-sticky) {
+      background-color: transparent;
+    }
+    &:not(.is-sticky)::before {
+      opacity: 0;
+    }
+    z-index: 100;
+    box-shadow: var(--component-shadow);
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url(https://phenixthemes.com/frontdemo/animtora/img/pattren-top.png) top center repeat-x;
+      mix-blend-mode: soft-light;
+      border: none; outline: none;
+    }
+    .container {
+      // z-index: 2;
+      min-height: 64px;
+      position: relative;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      -webkit-box-pack: justify;
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 1350px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 0 none !important;
+      outline: none;
+      @import './header.search.scss';
+      .logo{
+        color: inherit;
+        background-color: transparent;
+        text-decoration: none;
+        color: var(--primary-color);
+        img {
+          max-height: 44px;
+          border-style: none;
+          max-width: 100%;
+          height: auto;
+          display: inline-block;
+          vertical-align: middle;
+          @media (max-width: 992px) { max-width: 150px; }
+          @media (max-width: 576px) { max-width: 120px; }
+        }   
+      }
+      .action-btns{
+        display: flex; justify-content: center; align-items: center;
+      }
+    }
+    @import './header.nav.scss';
+  }
+  @import '../Carousel.scss';
+}
+
+
+
+
+
+

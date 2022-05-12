@@ -1,0 +1,147 @@
+.subscribe-cta {
+  margin: 20px 0px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: var(--primary-color);
+  color: #FFF;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://phenixthemes.com/frontdemo/animtora/img/pattren-2.png) 0 0 repeat-x;
+    mix-blend-mode: soft-light;
+    z-index: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    .align-center-y{
+      align-items: center;
+      -webkit-box-align: center;
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+      .ti-user:before {
+        content: "\f1ff";
+      }
+      .ti-view-module:before {
+        content: "\f515";
+      }
+      .ti-notifications:before {
+        content: "\f199";
+      }
+      .cta-column{
+        display: flex;
+        flex-wrap: wrap;
+        &::before {
+          width: 100%;
+          display: block;
+          font-size: 25px;
+          line-height: 1;
+          margin-bottom: 5px;
+          padding-left: 5px;
+        }
+        .step {
+          width: 35px;
+          font-size: 1.875rem;
+          line-height: 1.3;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: var(--strong-weight);
+          i {
+            border-top: 2px solid #FFF;
+            padding-top: 5px;
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+          }
+        }
+        h3 {
+          font-size: 1.875rem;
+          line-height: 1.3;
+          width: calc(100% - 35px);
+          padding-left: 15px;
+          color: inherit;
+          span {
+            display: block;
+            font-size: 1.188rem;
+            font-weight: 400;
+            color: inherit;
+            line-height: 1.3;
+            text-transform: uppercase;
+            // font-family: var(--primary-font);
+          }
+        }
+      }
+ 
+      [class^="ti-"]:before, [class*=" ti-"]:before {
+        font-family: var(--icons-font) !important;
+        font-style: normal;
+        font-weight: normal !important;
+        font-variant: normal;
+        text-transform: none;
+        // line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        vertical-align: middle;
+        // display: inline-block;
+      }
+      .col-12 {
+        margin-bottom: 30px;
+        width: 100%;
+        h2 {
+          font-size: 1.875rem;
+          border-bottom: 2px solid #FFF;
+          line-height: 1.3;
+          margin-bottom: 5px;
+          display: inline-block;
+          vertical-align: middle;
+          color: inherit;
+          font-family: var(--primary-font);
+          font-weight: var(--strong-weight);
+          margin: auto;
+        }
+        p {
+          font-size: 1.063rem;
+          margin-bottom: 0;
+          line-height: 1.3;
+          padding: 0;
+          margin: 0;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+          strong {
+            font-size: 1rem;
+            display: block;
+            font-weight: 800
+          }
+        }
+      }
+      .col-m-6{
+        @media (min-width: 768px){
+          width: 50%;
+        }
+      }
+      .col-l-3 { 
+        @media (min-width: 1200px) { width: 25%; }
+      }
+      [class*="col-"], .row>[class*="box-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}

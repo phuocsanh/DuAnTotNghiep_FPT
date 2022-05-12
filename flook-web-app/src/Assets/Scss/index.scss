@@ -1,0 +1,103 @@
+@font-face {
+  font-family: tornado_icons;
+  src: url(../Fonts/tornado-icons.woff2);
+}
+
+:root {
+  --body-bg: #FCFCFC;
+  --primary-color: #816bab;
+  --primary-hover: #674e96;
+  --primary-dark: #523c7f;
+  --primary-reverse: #FFF;
+  --secondary-color: #f7b748;
+  --secondary-hover: #e39000;
+  --secondary-reverse: #FFFFFF;
+  --success-color: #22b544;
+  --danger-color: #de3131;
+  --warning-color: #f4bb0e;
+  --info-color: #17c0db;
+  --gray-color: #868e96;
+  --dark-color: #343a40;
+  --disable-color: #ebebeb;
+  --success-light: #c1eecc;
+  --danger-light: #fbbbbb;
+  --warning-light: #ffdd75;
+  --info-light: #a6eaf5;
+  --gray-light: #d9dde1;
+  --dark-light: #585C5F;
+  --headlines-color: #1c1c1c;
+  --typography-color: #555;
+  --light-reverse: #000;
+  --dark-reverse: #FFF;
+
+
+  --primary-font: 'Roboto';
+  --secondary-font: 'Roboto';
+  --icons-font: "tornado_icons";
+
+
+  --base-l-size: 16px;
+  --base-m-size: 15px;
+  --base-s-size: 14px;
+  --line-height: 1.625;
+  --normal-weight: 400;
+  --medium-weight: 500;
+  --strong-weight: 600;
+
+
+  --component-background: #FFFFFF;
+  --component-darker-bg: #f8f8f8;
+  --component-color: var(--dark-color);
+  --component-active-bg: var(--primary-color);
+  --component-active-color: var(--primary-reverse);
+  --component-border: 1px solid rgba(0,0,0,.10);
+  --component-radius: 5px;
+  --component-padding: 15px;
+  --component-shadow: none;
+
+  
+  --forms-bg: #FFF;
+  --forms-color: var(--typography-color);
+  --forms-radius: 5px;
+  --forms-border: 1px solid rgba(0,0,0, 0.1);
+  --forms-darker-bg: #ebebeb;
+  --forms-shadow: inset 0 0 5px rgba(0,0,0, 0.03);
+  --forms-btns-shadow: none;
+  --forms-height: 2.5rem;
+  --forms-height-small: 2.25rem;
+  --forms-height-large: 3rem;
+  --forms-height-txarea: 6.25rem;
+  --forms-padding: 0.9375rem;
+  --forms-padding-large: 1.25rem;
+  --forms-gutter: 1.25rem;
+  --forms-alert: #c2c8cd;
+
+
+  --table-background: #FFFFFF;
+  --table-head-bg: #f4f4f4;
+  --table-striped: #f4f4f4;
+  --table-border: 1px solid rgba(0,0,0, 0.1);
+  --table-padding: 15px;
+
+}
+
+// Mobile
+$mobie-vertical: 320px;
+$mobie-horizontal: 480px;
+
+// Tablet
+$tablet-sm-vertical: 600px;
+$tablet-sm-horizontal: 800px;
+
+$tablet-md-vertical: 768px;
+$tablet-md-horizontal: 1025px;
+
+$laptop-13inch-container: 1250px;
+$laptop-15inch-container: 1350px;
+
+
+
+@import 'react-toastify/dist/ReactToastify.css';
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+@import './Admin.scss';
+@import './App.scss';

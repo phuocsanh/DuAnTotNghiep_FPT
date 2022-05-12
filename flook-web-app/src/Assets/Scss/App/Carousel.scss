@@ -1,0 +1,36 @@
+.main-carousel{
+  position: relative;
+  z-index: 5;
+  padding: 0px 15px;
+  max-width: $laptop-13inch-container;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  animation: 1s all linear;
+  @media (max-width: $tablet-md-horizontal){
+    padding: 0px;
+  }
+  .vertical-title {
+    color: #FFF;
+    line-height: 30px;
+    font-size: 1.438rem;
+    position: absolute;
+    top: 0;
+    border: 2px solid var(--dark-reverse);
+    border-top: 0 none;
+    border-bottom: 0 none;
+    font-weight: 300;
+    width: 2.1rem;
+    text-align: center;
+    left: -2.2rem;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    margin: 0 auto;
+  }
+  .slider{
+    padding: 0;
+    position: relative;
+    direction: ltr;
+  }
+
+}

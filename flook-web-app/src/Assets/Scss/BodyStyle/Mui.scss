@@ -1,0 +1,16 @@
+.css-1s3o2b8-MuiButtonBase-root-MuiPaginationItem-root{
+  margin: 0 10px;
+  color: inherit;
+  &:hover{
+    color: var(--dark-reverse);
+    background-color: var(--primary-color);
+  }
+  &.Mui-selected {
+    color: var(--dark-reverse);
+    background-color: var(--primary-color);
+    &:hover{
+      background-color: var(--primary-color);
+
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.card-image{
+  padding: 0px 15px;
+  .card {
+		z-index: 1;
+		border: none;
+		outline: none;
+    color: #FFF;
+		height: 450px;
+    cursor: pointer;
+    overflow: hidden;
+		position: relative;
+		border-radius: 10px;
+		background-size: cover;
+		background-repeat: no-repeat;
+    background-position: center center;
+    @media (max-width: 992px) { height: 350px; }
+    @media (max-width: 768px) { height: 400px; }
+    @media (max-width: 576px) { height: 350px; }
+		&::before {
+			content: "";
+			z-index: -1; 
+      position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.8;
+		}
+		&:hover {
+      .card-spacing {
+        padding-top: 0px;
+      }
+      .card-content {
+        padding-top: 120px;
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 15% );
+      }
+		}
+    .card-spacing {
+      padding-top: 215px;
+      transition: padding 0.3s;
+    }
+    .card-content {
+      height: 100%;
+      padding-top: 80px;
+      padding-left: 12px;
+      padding-right: 12px;
+      transition: padding 0.3s;
+      background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 15% );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+      @media (max-width: 992px) { padding-top: 30px; }
+      @media (max-width: 768px) { padding-top: 80px; }
+      @media (max-width: 576px) { padding-top: 30px; }
+      div {margin: 5px 0px}
+      .card-author {
+        color:#fff;
+        font-size: 15px;
+        margin-bottom: 25px;
+        max-height: 2.7rem;
+        overflow: hidden;
+      }
+      .card-title{
+        color: #fff;
+        line-height: 35px;
+        font-size: 25px;
+      }
+      .card-rating{font-size: 15px;}
+      .card-day {
+        color: #000;
+        display: inline;
+        padding: 3px 7px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        background-color: pink;
+      }
+      .card-description {
+        font-size: 15px;
+        padding: 15px 0 0 0;
+        max-height: 5.4rem;
+        overflow: hidden;
+      }
+      .link {
+        font-size: 12px;
+        color: #FFF;
+        display: inline-block;
+        text-align: center;
+        text-decoration: underline;
+      }
+    }
+	}
+}
